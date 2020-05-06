@@ -24,7 +24,7 @@ export class Main extends Component {
     }
     change = (city) => {
         // this.setState({title:city,expanded:false})
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metricss&appid=4d866478b033e279bc3884183efe3a61`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metricss&appid=<your_api_id>`)
         .then(data=> data.json())
         .then(async data2 => {
             if (data2.cod == 200){
